@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="hostess" class="spring.Person">
+        <property name ="userName" value = "admin"></property>
+        <property name ="passWord" value = "admin"></property>
+    </bean>
+
+    <bean class="spring.mybatis.JDBCUtils" id="dataSource">
+        <property name="user" value="root"></property>
+        <property name="password" value="qinliang"></property>
+        <property name="driver" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"></property>
+    </bean>
+
+    <component-scan base-package="spring.demo" >
+    </component-scan>
+
+
+</beans>

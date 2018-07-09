@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="hostess" class="spring.Person">
+        <property name ="userName" value = "admin"></property>
+        <property name ="passWord" value = "admin"></property>
+
+    </bean>
+
+    <bean2  id="hostess" class="spring.Person">
+        <property name ="userName" value = "admin2"></property>
+        <property name ="passWord" value = "admin2"></property>
+    </bean2>
+
+</beans>
